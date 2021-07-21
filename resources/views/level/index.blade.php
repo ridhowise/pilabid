@@ -20,7 +20,6 @@
           <tr>
             <th>No</th>
             <th>Name</th>
-            <th>Status Aktif</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -28,7 +27,6 @@
           <tr>
             <th>No</th>
             <th>Name</th>
-            <th>Status Aktif</th>
             <th>Action</th>
           </tr>
         </tfoot>

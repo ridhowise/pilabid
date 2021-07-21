@@ -15,13 +15,11 @@ class DatabaseSeeder extends Seeder
         DB::table('levels')->insert([
         	'id'=> '1',
             'name' => 'user',
-            'des' => 'des',
             'created_at' => Carbon::now(),
         ]);
         DB::table('levels')->insert([
             'id'=> '2',
             'name' => 'Administrator',
-            'des' => 'des',
             'created_at' => Carbon::now(),
         ]);
         DB::table('users')->insert([

@@ -36,7 +36,6 @@ class UserController extends Controller
             $simpan->name = $req -> input('name');
             $simpan->email = $req ->input('email');
             $simpan->password = hash::make($req->input('password'));
-		    $simpan->status_aktif = $req -> input('status_aktif');
             $simpan->save();
 		return redirect()->route('user.index')->with('alert-success', 'Berhasil Menambahkan Data!');
     }

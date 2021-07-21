@@ -23,7 +23,6 @@
             <th>Nama</th>
             <th>Email</th>
             <th>Role</th>
-            <th>Status Aktif</th>
             <th>Action</th>
           </tr>
         </thead>
