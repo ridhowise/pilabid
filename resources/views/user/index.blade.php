@@ -38,15 +38,7 @@
                 <td>{{ $items->name }}</td>
                 <td>{{ $items->email }}</td>
                 <td>{{$items->level->name}}</td>
-                <td>
-                    @if ($items->status_aktif == 1)
-                        <a class="tag label-info">Aktif</a>
-                    @elseif ($items->status_aktif == 0)
-                        <a class="tag label-danger">Tidak Aktif</a>
-                    @else
-                        Tidak
-                    @endif
-                </td>
+                
                 <td>
 				
                 <form action="{{ route('user.destroy', $items->id) }}" method="post">
@@ -54,9 +46,8 @@
                     {{ method_field('DELETE') }}
                     <!--<a href="{{ route('user.show',$items->id) }}">Lihat</a>
                     <a class="btn btn-sm btn-success" type="submit" href="{{ route('user.edit',$items->id) }}">Edit</a>-->
-                    @if ($items->status_aktif == 0)
-                    <a style="color:white;" class="btn btn-sm btn-success" type="submit" href="{{ route('user.update',$items->id) }}" onclick="return confirm('Yakin ingin mengaktifkan akun ini?')">Aktifkan</a>
-                    @endif
+                   
+                    <a class="btn btn-sm btn-success" type="submit" href="{{ route('user.edit',$items->id) }}">Edit</a>
                     <button style="color:white;" class="btn btn-sm btn-danger" type="submit" onclick="return confirm('Yakin ingin menghapus data?')">Delete</button>
                 </form>
                 </td>

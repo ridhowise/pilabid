@@ -14,7 +14,6 @@
                  <hr style="visibility: hidden">
                 <form class="m-t form login" method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
                 @csrf
-                <input id="status_aktif" type="hidden" class="form-control" name="status_aktif" value="0" >
                 <input id="level_id" type="hidden" class="form__input" name="level_id" value="1" >
                 <div class="form__field">
                     <label for="login__username"><svg class="icon">

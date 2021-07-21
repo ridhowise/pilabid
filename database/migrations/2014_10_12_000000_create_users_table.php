@@ -16,7 +16,6 @@ class CreateUsersTable extends Migration
         Schema::create('levels', function (Blueprint $kolom) {
             $kolom->increments('id');
             $kolom->string('name');  
-            $kolom->string('des');  
 			$kolom->timestamps();
         });
 
@@ -25,6 +24,7 @@ class CreateUsersTable extends Migration
             $kolom->unsignedInteger('level_id')->nullable();
             $kolom->string('name');
             $kolom->string('email')->unique();
+            $kolom->string('images')->nullable();
             $kolom->string('password');
             $kolom->rememberToken();
             $kolom->timestamps();

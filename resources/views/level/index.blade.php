@@ -40,15 +40,7 @@
            <tr>
             <td>{{ $no++ }}</td>
             <td>{{ $items->name }}</td>
-             <td>
-                @if ($items->status_aktif == 1) 
-                    <a >Aktif</a>
-                @elseif ($items->status_aktif == 0) 
-                    <a >Tidak Aktif</a> 
-                @else 
-                    Tidak 
-                @endif
-			</td>
+             
             <td>
             <form action="{{ route('level.destroy', $items->id) }}" method="post">
                 {{ csrf_field() }}

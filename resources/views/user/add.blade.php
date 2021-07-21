@@ -59,10 +59,10 @@
 												<input type="text" name="name" placeholder="Nama" class="form-control" required> 
                                                 </div>
                                             </div>
-                                            <div class="form-group row"><label class="col-lg-2 form-control-label">Email</label>
+                                            <div class="form-group row"><label class="col-lg-2 form-control-label">Username</label>
 
                                                 <div class="col-lg-10">
-                                                <input type="email" name="email" placeholder="Email" class="form-control" required> 
+                                                <input type="text" name="email" placeholder="username" class="form-control" required> 
                                                 </div>
                                             </div>
                                             <div class="form-group row"><label class="col-lg-2 form-control-label">Password</label>
@@ -72,14 +72,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="form-group row"><label class="col-lg-2 form-control-label">Status</label>
-
-                                                <div class="col-lg-10">
-												<select name="status_aktif" class="form-control select">
-													<option value="1">Aktif</option>
-													<option value="0">Tidak Aktif</option>
-												</select>
-                                            </div>
+                                           
 											</div>
                                             <div class="form-group row">
                                                 <div class="col-lg-offset-2 col-lg-10">

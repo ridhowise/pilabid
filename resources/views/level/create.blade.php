@@ -36,14 +36,7 @@
 												<input type="text" name="name" placeholder="Name" class="form-control" required> 
                                                 </div>
                                             </div>
-                                            <div class="form-group row"><label class="col-lg-2 form-control-label">Status</label>
-
-                                                <div class="col-lg-10">
-												<select name="status_aktif" class="form-control select">
-													<option value="1">Aktif</option>
-													<option value="0">Tidak Aktif</option>
-												</select>
-                                            </div>
+                                            
                                             <div class="form-group row">
                                                 <div class="col-lg-offset-2 col-lg-10">
                                                     <button class="btn btn-sm btn-primary" type="submit">Save</button>

@@ -50,7 +50,7 @@ class UserController extends Controller
     public function edit($id)
     {
         $data = User::findOrFail($id);
-        $level = Level::whereNotIn('id', [1, 5])->get();
+        $level = Level::get();
         return view('user.edit', compact('data', 'level'));
     }
 

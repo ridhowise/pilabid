@@ -74,27 +74,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
 							<li><a href="{{ url('/') }}" role="button" aria-haspopup="true" aria-expanded="false">Home</a></li>
-							@foreach($data as $hal )
-						    @if ($hal->status_aktif == 1)
-							<li >
-                               <a href="{{ url('hal') }}/{{ $hal->id }}" role="button" aria-haspopup="true" aria-expanded="false">{{ $hal->title }} </a>
-							</li>
-							@elseif ($hal->status_aktif == 2)
-							<li class="dropdown submenu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ $hal->title }} <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu">
-										@foreach(\App\SubPage::where('page_id', '=', $hal->id)->where('status_aktif', '1')->get() as $hala )
-										<li style="background-color:black;"><a target="_blank" href="{{ url('subhal') }}/{{ $hala->id }}">{{ $hala->title }}</a></li>
-										@endforeach
-                                    </ul>
-                            </li>
-							@endif
-							@endforeach
 							
-                               
-                                
-                                
-                                
                                 <!--
                                 <li class="submenu dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>

@@ -47,10 +47,11 @@
 
                                                 <div class="col-lg-10">
                                                 <select name="level_id" id="level_id" class="form-control{{ $errors->has('level_id') ? ' is-invalid' : '' }}">
-                                                    <option>Select Level</option>
+                                                <option value="{{ $data->level->id }}"> {{ $data->level->name }}</option>
+                                                <option>---SELECT ROLE---</option>
 
                                                     @foreach($level as $level)
-                                                      <option value="{{ $level->id }}"> {{ $level->level }}</option>
+                                                      <option value="{{ $level->id }}"> {{ $level->name }}</option>
                                                     @endforeach
                                                   </select>
 
@@ -67,62 +68,15 @@
                                                 <input type="text" name="name" placeholder="Nama" value="{{ $data->name }}" class="form-control" required> 
                                                 </div>
                                             </div>
-                                            <div class="form-group row"><label class="col-lg-2 form-control-label">Email</label>
+                                            <div class="form-group row"><label class="col-lg-2 form-control-label">Username</label>
 
                                                 <div class="col-lg-10">
-                                                <input type="email" name="email" value="{{ $data->email }}" placeholder="Email" class="form-control" required> 
+                                                <input type="text" name="email" value="{{ $data->email }}" placeholder="Username" class="form-control" required> 
                                                 </div>
                                             </div>
-                                            <div class="form-group row"><label class="col-lg-2 form-control-label">Password</label>
-
-                                                <div class="col-lg-10">
-                                                <input type="password" name="password" class="form-control" required> 
-                                                </div>
-                                            </div>
-											
-											
-											 <div class="form-group row"><label class="col-lg-2 form-control-label">NIP</label>
-
-                                                <div class="col-lg-10">
-                                                <input type="text" name="nip" placeholder="NIP" value="{{ $data->nip }}" class="form-control" required> 
-                                                </div>
-                                            </div>
-											
-											 <div class="form-group row"><label class="col-lg-2 form-control-label">Jabatan</label>
-
-                                                <div class="col-lg-10">
-                                                <input type="text" name="jabatan" placeholder="Jabatan" value="{{ $data->jabatan }}" class="form-control" required> 
-                                                </div>
-                                            </div>
-											
-                                            <div class="form-group row"><label class="col-lg-2 form-control-label">NIK</label>
-
-                                                <div class="col-lg-10">
-                                                <input type="text" name="nik" placeholder="NIK" value="{{ $data->nik }}" class="form-control" required> 
-                                                </div>
-                                            </div>
-                                            <div class="form-group row"><label class="col-lg-2 form-control-label">No HP</label>
-
-                                                <div class="col-lg-10">
-                                                <input type="text" name="no_hp" placeholder="No HP" value="{{ $data->no_hp }}" class="form-control" required> 
-                                                </div>
-                                            </div>
-                                            <div class="form-group row"><label class="col-lg-2 form-control-label">Jenis Kelamin</label>
-
-                                                <div class="col-lg-10">
-                                                <select name="jenis_kelamin" class="form-control select">
-                                                    <option value="1">Laki-laki</option>
-                                                    <option value="2">Perempuan</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group row"><label class="col-lg-2 form-control-label">Status</label>
-
-                                                <div class="col-lg-10">
-                                                <select name="status_aktif" class="form-control select">
-                                                    <option value="1">Aktif</option>
-                                                    <option value="0">Tidak Aktif</option>
-                                                </select>
-                                            </div>
+                                         
+						
+                                            
                                             <div class="form-group row">
                                                 <div class="col-lg-offset-2 col-lg-10">
                                                     <button class="btn btn-sm btn-primary" type="submit">Save</button>

@@ -40,10 +40,7 @@ Route::get('/', function () {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout', 'AuthController@logout');
 
-Route::resource('akuntansi', 'akuntansiController')->middleware('auth');
-Route::get('/akuntansis/export_excel', 'akuntansiController@export_excel')->middleware('auth');
 Route::resource('level', 'LevelController')->middleware('auth');
 Route::resource('user', 'UserController')->middleware('auth');
 
 
-Route::get('/server/{id}/aplikasi', 'serverController@aplikasi');

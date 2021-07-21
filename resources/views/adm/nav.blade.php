@@ -34,19 +34,17 @@
 <!--
 <li class="nav-item active"><a class="nav-link" href="{{ url('setting') }}"><i class="fas fa-fw fa fa-cogs"></i><span>Setting</span></a></li>
 -->
-@elseif (Auth::user()->level_id=='1')
+@else
 
 <!-- Heading -->
 <div class="sidebar-heading">
-  Manajement Aset
+  Manajement User
 </div>
 
+<li class="nav-item active"><a class="nav-link" href="{{ url('level') }}"><i class="fas fa-fw fa fa-bolt"></i><span>Role</span></a></li>
+<li class="nav-item active"><a class="nav-link" href="{{ url('user') }}"><i class="fas fa-fw fa fa-user-circle"></i><span>Users</span></a></li>
 
-<!-- Nav Item - Pages Collapse Menu -->
-<li class="nav-item active"><a class="nav-link" href="{{ url('kategori') }}"><i class="fas fa-fw fa-cog"></i><span>Kategori</span></a></li>
-<li class="nav-item active"><a class="nav-link" href="{{ url('aset') }}"><i class="fas fa-fw fa-id-card"></i><span>Manajement Aset</span></a></li>
-<!-- Divider -->
-<hr class="sidebar-divider">
+
 
 @endif
 
