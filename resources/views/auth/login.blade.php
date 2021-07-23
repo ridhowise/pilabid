@@ -10,7 +10,7 @@
 
             <div class="grid">
               <img src="adm/img/logo.png" alt="logo" style="width:50%;display: block;margin-left: auto;margin-right: auto;">
-              <h3 class="text--center" style="color:#23395d"><strong>LOGIN</strong> </h3>
+              <h3 class="text--center" style="color:#863798"><strong>LOGIN</strong> </h3>
               <hr style="visibility: hidden">
               <form action="{{ route('login') }}" method="POST" class="form login">
                 @csrf

@@ -10,8 +10,8 @@
                                     <h4 class="float-left">Edit User</h4>
 
                                     <ol class="breadcrumb float-left float-md-right">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);"><i class="fa fa-home"></i></a></li>
-                                        <li class="breadcrumb-item">User</li>
+                                        <li class="breadcrumb-item"><a href="{{ url()->previous() }}"><i class="fa fa-arrow-left"></i></a></li>
+                                    
                                     </ol>
 
                                 </div>
@@ -24,23 +24,9 @@
                                 <div class="col-md-6">
                                 <div class="panel panel-card margin-b-30">
                                     <!-- Start .panel -->
-                                    <div class="card-header">
-                                        Edit User
-                                        <div class="float-right">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-info btn-rounded btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
-                                                <div class="dropdown-menu panel-dropdown" role="menu">
-                                                    <a  class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-
-                                                    <a class="dropdown-item" href="#">Separated link</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="panel-body  p-xl-3">
-                                        <form class="form-horizontal" action="{{ route('user.update', $data->id) }}" method="post">
+                                        <form class="form-horizontal" action="{{ route('user.update', $data->id) }}" method="post" enctype="multipart/form-data">
                                         {{ csrf_field() }}
                                         <input type="hidden" name="_method" value="PATCH">
                                             <div class="form-group row"><label class="col-lg-2 form-control-label">Role</label>
@@ -74,7 +60,14 @@
                                                 <input type="text" name="email" value="{{ $data->email }}" placeholder="Username" class="form-control" required> 
                                                 </div>
                                             </div>
-                                         
+                                            <div class="form-group row"><label class="col-lg-2 form-control-label">Foto</label>
+
+                                                <div class="col-lg-10">
+                                                <input type="file" name="image" class="form-control"> 
+                                                <br>
+                                                Current pic : <img style="width:100px" src="{{ URL::asset('images/') }}/{{$data->images}}">
+                                                </div>
+                                            </div>
 						
                                             
                                             <div class="form-group row">

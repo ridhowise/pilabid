@@ -42,5 +42,6 @@ Route::get('/logout', 'AuthController@logout');
 
 Route::resource('level', 'LevelController')->middleware('auth');
 Route::resource('user', 'UserController')->middleware('auth');
+Route::get('/id/{id}', 'idController@index')->name('id');
 
 

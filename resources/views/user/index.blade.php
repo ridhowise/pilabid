@@ -45,7 +45,7 @@
                     {{ method_field('DELETE') }}
                     <!--<a href="{{ route('user.show',$items->id) }}">Lihat</a>
                     <a class="btn btn-sm btn-success" type="submit" href="{{ route('user.edit',$items->id) }}">Edit</a>-->
-                   
+                    <a class="btn btn-sm btn-primary" type="submit" href="id/{{$items->id}}">Show</a>
                     <a class="btn btn-sm btn-success" type="submit" href="{{ route('user.edit',$items->id) }}">Edit</a>
                     <button style="color:white;" class="btn btn-sm btn-danger" type="submit" onclick="return confirm('Yakin ingin menghapus data?')">Delete</button>
                 </form>

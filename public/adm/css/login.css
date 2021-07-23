@@ -79,8 +79,8 @@
   }
   
   body {
-    background-color: #abe9cd;
-    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+    background-color: #151a29;
+    background-image: linear-gradient(315deg,#151a29 45%, #21314d 74%);
     color: var(--bodyColor);
     font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
     font-size: var(--bodyFontSize);
@@ -157,9 +157,9 @@
     --loginInputBackgroundColor: rgba(244, 241, 241, 0.886);
     --loginInputHoverBackgroundColor: #fff;
   
-    --loginLabelBackgroundColor: #23395d;
+    --loginLabelBackgroundColor: #863798;
   
-    --loginSubmitBackgroundColor: #23395d;
+    --loginSubmitBackgroundColor: #863798;
     --loginSubmitColor: #eee;
     --loginSubmitHoverBackgroundColor: #1c2e4a;
   }
