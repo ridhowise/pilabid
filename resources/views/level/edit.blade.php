@@ -25,7 +25,7 @@
                                 <div class="panel panel-card margin-b-30">
                                     <!-- Start .panel -->
                                     <div class="card-header">
-                                        Edit Jenis Role
+                                        Edit Role
                                         <div class="float-right">
                                         </div>
                                     </div>
