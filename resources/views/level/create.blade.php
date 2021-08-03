@@ -7,11 +7,11 @@
                             <div class="col-sm-12">
                                 <div class="page-title">
 
-                                    <h4 class="float-left">Create Level</h4>
+                                    <h4 class="float-left">Create Role</h4>
 
                                     <ol class="breadcrumb float-left float-md-right">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);"><i class="fa fa-home"></i></a></li>
-                                        <li class="breadcrumb-item">Level</li>
+                                        <li class="breadcrumb-item">Role</li>
                                     </ol>
 
                                 </div>
@@ -25,15 +25,15 @@
                                 <div class="panel panel-card margin-b-30">
                                     <!-- Start .panel -->
                                     <div class="card-header">
-                                        Create Jenis Level
+                                        Role
                                     </div>
                                     <div class="panel-body  p-xl-3">
                                         <form class="form-horizontal" action="{{ route('level.store') }}" method="post">
 										{{ csrf_field() }}
-                                            <div class="form-group row"><label class="col-lg-2 form-control-label">Name</label>
+                                            <div class="form-group row"><label class="col-lg-2 form-control-label">Role</label>
 
                                                 <div class="col-lg-10">
-												<input type="text" name="name" placeholder="Name" class="form-control" required> 
+												<input type="text" name="name" placeholder="Role" class="form-control" required> 
                                                 </div>
                                             </div>
                                             
