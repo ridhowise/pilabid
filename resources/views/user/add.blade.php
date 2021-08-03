@@ -31,7 +31,7 @@
 
                                                 <div class="col-lg-10">
                                                 <select name="level_id" id="level_id" class="form-control{{ $errors->has('level_id') ? ' is-invalid' : '' }}">
-                                                    <option>Select Level</option>
+                                                    <option>Select Roles</option>
 
                                                     @foreach($data as $level)
                                                       <option value="{{ $level->id }}"> {{ $level->name }}</option>
